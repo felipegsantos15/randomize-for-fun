@@ -1,0 +1,16 @@
+{
+  "name": "so-many-possibilites",
+  "version": "1.0.0",
+  "description": "app build to fun with my friends",
+  "main": "so-many-possibilites.js",
+  "scripts": {
+    "start": "node so-many-possibilites.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "restify": "^8.2.0"
+  }
+}
