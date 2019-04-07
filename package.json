@@ -1,16 +1,17 @@
 {
-  "name": "so-many-possibilites",
+  "name": "randomize-for-fun",
   "version": "1.0.0",
   "description": "app build to fun with my friends",
-  "main": "so-many-possibilites.js",
+  "main": "randomize-for-fun.js",
   "scripts": {
-    "start": "node so-many-possibilites.js",
+    "start": "node randomize-for-fun.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^7.0.0",
+    "mongoose": "^5.4.22",
     "restify": "^8.2.0"
   }
 }
