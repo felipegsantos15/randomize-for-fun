@@ -1,13 +1,13 @@
 const restify = require('restify');
 const server = restify.createServer();
-const randomize = require(__dirname + "/phrases/randomize");
+const randomize = require(__dirname + "/randomize");
 
 server.get('/ping', (req, res) => {
     return res.send(200, 'pong')
 });
 
 server.get('/:name', (req, res) => {
-    let string = randomize.get(req.params.name);
+    let string = randomize.random(req.params.name);
     return res.send(200, string);
 });
 
