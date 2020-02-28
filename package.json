@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^7.0.0",
-    "mongoose": "^5.4.22",
+    "mongoose": "^5.7.5",
     "restify": "^8.2.0"
   }
 }
