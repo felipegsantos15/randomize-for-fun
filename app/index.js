@@ -7,7 +7,7 @@ server.get('/ping', (req, res) => {
 });
 
 server.get('/:name', (req, res) => {
-    let string = randomize.random(req.params.name);
+    let string = randomize.get(req.params.name);
     return res.send(200, string);
 });
 

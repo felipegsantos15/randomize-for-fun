@@ -17,7 +17,9 @@ const randomize =  {
             "To conflito",
             "O problema do gel é que deixa o cabelo duro",
             "Agora é hora sabe do que? De dar o trinta e four",
-            "Quanto mais eu jogo pior eu fico"
+            "Quanto mais eu jogo pior eu fico",
+	    "Voce  viu que tem chuveiro no banheiro MULTISEX?",
+	    "Entrou na tu ral mente nas pessoas"
         ];
 
         return phrase[Math.floor(Math.random() * phrase.length)]
