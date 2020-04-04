@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const db = mongoose.connection;
 
-mongoose.connect('mongodb://localhost/local', {useNewUrlParser: true})
+mongoose.connect('mongodb://localhost/randomizePhrase', {useNewUrlParser: true, useUnifiedTopology: true })
 
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
