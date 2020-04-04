@@ -1,5 +1,4 @@
 const randomize = require("./process/randomize");
-const add = require('./process/add')
 const fs = require('fs');
 
 module.exports ={
@@ -24,7 +23,7 @@ module.exports ={
         })
         
         server.post('/insert', (req, res, next) => {
-            add.insert();
+            randomize.put();
             next(false);
         })
     }

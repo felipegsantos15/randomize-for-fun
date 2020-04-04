@@ -1,6 +1,4 @@
-
-
-const randomize =  {
+module.exports =  {
     get: (name) => {
         let phrase = [
             "Se fosse minhas bolas eu não teria feito",
@@ -18,15 +16,13 @@ const randomize =  {
             "O problema do gel é que deixa o cabelo duro",
             "Agora é hora sabe do que? De dar o trinta e four",
             "Quanto mais eu jogo pior eu fico",
-	    "Voce  viu que tem chuveiro no banheiro MULTISEX?",
-	    "Entrou na tu ral mente nas pessoas"
+	        "Voce  viu que tem chuveiro no banheiro MULTISEX?",
+	        "Entrou na tu ral mente nas pessoas"
         ];
 
         return phrase[Math.floor(Math.random() * phrase.length)]
     },
-    put: () => {
+    put: (name, phrase) => {
 
     }
 }
-
-module.exports = randomize;
