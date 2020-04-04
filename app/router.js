@@ -1,4 +1,5 @@
 const randomize = require("./process/randomize");
+require("./mongo/connection");
 const fs = require('fs');
 
 module.exports ={
@@ -22,8 +23,8 @@ module.exports ={
             next(false);
         })
         
-        server.post('/insert', (req, res, next) => {
-            randomize.put();
+        server.post('/:name', (req, res, next) => {
+            randomize.put(req.params.name, req.body.frase);
             next(false);
         })
     }
