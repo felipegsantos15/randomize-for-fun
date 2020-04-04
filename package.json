@@ -1,11 +1,11 @@
 {
   "name": "randomize-for-fun",
   "version": "1.0.0",
-  "description": "app build to fun with my friends",
+  "description": "app builded to fun with my friends",
   "main": "randomize-for-fun.js",
   "scripts": {
-    "start": "node randomize-for-fun.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": ""
   },
   "author": "",
   "license": "ISC",
