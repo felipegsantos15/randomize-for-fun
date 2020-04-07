@@ -9,8 +9,9 @@ module.exports ={
         });
         
         server.get('/:name', (req, res) => {
-            let string = randomize.get(req.params.name);
-            res.send(200, string);
+            randomize.get(req.params.name, data => {
+                res.send(200, data);
+            });
         });
         
         server.get('/', (req, res, next)=> {
@@ -25,7 +26,8 @@ module.exports ={
         
         server.post('/:name', (req, res, next) => {
             randomize.put(req.params.name, req.body.frase);
-            next(false);
+            res.send(200, 'inserido')
+            return next();
         })
     }
 }
