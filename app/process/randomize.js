@@ -22,7 +22,12 @@ module.exports =  {
 
         return phrase[Math.floor(Math.random() * phrase.length)]
     },
-    put: (name, phrase) => {
-
+    put: (name, data) => {
+        let person = new phrase({name: name, body: data});
+        person.save(err => {
+            if (err) throw err;
+            return;
+        })
+        return true;
     }
 }

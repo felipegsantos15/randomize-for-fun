@@ -25,7 +25,8 @@ module.exports ={
         
         server.post('/:name', (req, res, next) => {
             randomize.put(req.params.name, req.body.frase);
-            next(false);
+            res.send(200, 'inserido')
+            return next();
         })
     }
 }
