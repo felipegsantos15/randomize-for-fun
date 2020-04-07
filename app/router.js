@@ -9,8 +9,9 @@ module.exports ={
         });
         
         server.get('/:name', (req, res) => {
-            let string = randomize.get(req.params.name);
-            res.send(200, string);
+            randomize.get(req.params.name, data => {
+                res.send(200, data);
+            });
         });
         
         server.get('/', (req, res, next)=> {
